@@ -1,15 +1,39 @@
+$font-text: 'Merriweather', serif;
+$font-header: 'Open Sans', sans-serif;
+$font-logo: 'Yellowtail', cursive;
+$color-y: #f1c40f;
 
 /* Global */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
 /*navigation*/
 
+.page-name a {
+    font-size: 35px;
+    font-family: $font-logo;
+    color: $color-y;
+    padding-right: 160px;
+}
+
 .navigation {
+    padding-top: 20px;
     ul {
         display: inline-flex;
         li {
+            margin: 0 18px;
             list-style-type: none;
             a {
                 text-decoration: none;
@@ -20,4 +44,25 @@
 
 .nav-right {
     justify-content: right;
+    padding-left: 160px;
+    a {
+        font-size: 15px;
+        color: silver;
+        font-family: $font-header;
+        text-shadow: black;
+            &:hover {
+                color: $color-y;
+            }
+    }
+}
+
+/*splash*/
+
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/1841841/pexels-photo-1841841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: none;
 }
