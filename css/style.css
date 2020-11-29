@@ -1,0 +1,24 @@
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*navigation*/
+.navigation ul {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.navigation ul li {
+  list-style-type: none;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+}
+
+.nav-right {
+  -ms-flex-pack: right;
+      justify-content: right;
+}
+/*# sourceMappingURL=style.css.map */

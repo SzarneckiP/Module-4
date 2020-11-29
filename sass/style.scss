@@ -1,0 +1,23 @@
+
+/* Global */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*navigation*/
+
+.navigation {
+    ul {
+        display: inline-flex;
+        li {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.nav-right {
+    justify-content: right;
+}
