@@ -26,7 +26,6 @@ body {
 }
 
 .navigation ul {
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -40,8 +39,7 @@ body {
 }
 
 .nav-right {
-  -ms-flex-pack: right;
-      justify-content: right;
+  justify-content: right;
   padding-left: 160px;
 }
 
@@ -65,4 +63,5 @@ body {
   background-size: cover;
   background-attachment: none;
 }
+
 /*# sourceMappingURL=style.css.map */
