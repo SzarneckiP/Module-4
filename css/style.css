@@ -13,6 +13,22 @@ body {
   margin: 0 auto;
 }
 
+.section-title {
+  position: relative;
+  font-size: 40px;
+  margin: 160px 0 0 0;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: silver;
+  font-size: 20px;
+  margin-top: 1px;
+  text-align: center;
+}
+
 /*navigation*/
 .page-name a {
   font-size: 35px;
@@ -26,6 +42,7 @@ body {
 }
 
 .navigation ul {
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -39,7 +56,8 @@ body {
 }
 
 .nav-right {
-  justify-content: right;
+  -ms-flex-pack: right;
+      justify-content: right;
   padding-left: 160px;
 }
 
@@ -62,6 +80,60 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: none;
+  color: white;
+  min-height: 500px;
 }
 
+.splash-inner {
+  margin: auto;
+  max-width: 70%;
+}
+
+.splash-inner h1 {
+  font-family: "Merriweather", serif;
+  font-size: 35px;
+  font-style: italic;
+  text-align: center;
+  padding-top: 150px;
+  text-shadow: 3px 3px black;
+}
+
+.splash-inner h2 {
+  font-size: 70px;
+  margin: 30px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*button*/
+.bttn {
+  display: table;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 20px 50px;
+  border-radius: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-position: 100% 0;
+  background-size: 300%;
+}
+
+.bttn:hover {
+  background-position: 0 100%;
+  color: white;
+}
+
+.bttn-one {
+  background-color: #f1c40f;
+  color: white;
+}
+
+.bttn-one:hover {
+  color: #f1c40f;
+  background-color: white;
+}
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,7 @@ $font-text: 'Merriweather', serif;
 $font-header: 'Open Sans', sans-serif;
 $font-logo: 'Yellowtail', cursive;
 $color-y: #f1c40f;
+$transition: all 1s;
 
 /* Global */
 *, *::before, *::after {
@@ -18,6 +19,21 @@ body {
     margin: 0 auto;
 }
 
+.section-title{
+    position: relative;
+    font-size: 40px;
+    margin: 160px 0 0 0;
+    font-family: $font-header;
+    color: black;
+    text-align: center;
+    }
+
+.section-subtitle {
+    color: silver;
+    font-size: 20px;
+    margin-top: 1px;
+    text-align: center;
+}
 
 /*navigation*/
 
@@ -65,4 +81,57 @@ body {
     background-position: center center;
     background-size: cover;
     background-attachment: none;
+    color: white;
+    min-height: 500px;
+}
+
+.splash-inner {
+    margin: auto;
+    max-width: 70%;
+    h1 {
+        font-family: $font-text;
+        font-size: 35px;
+        font-style: italic;
+        text-align: center;
+        padding-top: 150px;
+        text-shadow: 3px 3px black;
+    }
+    
+    h2 {
+        font-size: 70px;
+        margin: 30px 0;
+        font-family: $font-header;
+        font-weight: 400;
+        text-align: center;    
+        }
+    }
+
+/*button*/
+
+.bttn {
+    display: table;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 20px 50px;
+    border-radius: 3px;
+    font-family: $font-header;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-position: 100% 0;
+    background-size: 300%;
+    &:hover {
+        background-position: 0 100%;
+        color: white;
+    }
+}
+
+.bttn-one {
+    background-color: $color-y;
+    color: white;
+    &:hover {
+        color: $color-y;  
+        background-color: white;  
+    }
 }
