@@ -24,10 +24,11 @@ body {
 .section-title{
     position: relative;
     font-size: 40px;
-    margin: 160px 0 0 0;
+    margin: 60px 0 0 0;
     font-family: $font-header;
     color: black;
     text-align: center;
+    padding-top: 80px;
     }
 
 .section-subtitle {
@@ -176,4 +177,10 @@ body {
 
 .services .card {
     margin: 0 2px;
+}
+
+/*portfolio*/
+
+.portfolio {
+    background-color: #ecf0f1;
 }
