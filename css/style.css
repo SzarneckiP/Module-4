@@ -193,4 +193,53 @@ body {
 .portfolio {
   background-color: #ecf0f1;
 }
+
+.portfolio .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.portfolio .row .col-4 {
+  -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.portfolio .row .col-4 .card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  min-width: 0;
+  background-color: white;
+  margin: 20px;
+}
+
+.portfolio .row .col-4 .card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.portfolio .row .col-4 .card h3 {
+  color: black;
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.portfolio .row .col-4 .card p {
+  color: silver;
+  text-align: center;
+  margin-top: 0;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+}
 /*# sourceMappingURL=style.css.map */
