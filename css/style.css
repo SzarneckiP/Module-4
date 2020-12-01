@@ -26,10 +26,11 @@ body {
 }
 
 .section-subtitle {
-  color: silver;
+  color: #95a5a6;
   font-size: 20px;
   margin-top: 1px;
   text-align: center;
+  font-style: italic;
 }
 
 /*navigation*/
@@ -66,7 +67,7 @@ body {
 
 .nav-right a {
   font-size: 15px;
-  color: silver;
+  color: #95a5a6;
   font-family: "Open Sans", sans-serif;
   text-shadow: black;
 }
@@ -147,7 +148,7 @@ body {
 }
 
 .services p {
-  color: silver;
+  color: #95a5a6;
   text-align: center;
 }
 
@@ -236,10 +237,39 @@ body {
 }
 
 .portfolio .row .col-4 .card p {
-  color: silver;
+  color: #95a5a6;
   text-align: center;
   margin-top: 0;
   font-family: "Merriweather", serif;
   font-style: italic;
+}
+
+/*footer*/
+.socialmedia {
+  margin: 48px 0;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.socialmedia li {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 0;
+  text-align: center;
+}
+
+.socialmedia li i {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 30px;
+  background: black;
+  border-radius: 50%;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

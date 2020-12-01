@@ -2,6 +2,7 @@ $font-text: 'Merriweather', serif;
 $font-header: 'Open Sans', sans-serif;
 $font-logo: 'Yellowtail', cursive;
 $color-y: #f1c40f;
+$color-s: #95a5a6;
 $transition: all 1s;
 
 /* Global */
@@ -32,10 +33,11 @@ body {
     }
 
 .section-subtitle {
-    color: silver;
+    color: $color-s;
     font-size: 20px;
     margin-top: 1px;
     text-align: center;
+    font-style: italic;
 }
 
 /*navigation*/
@@ -66,7 +68,7 @@ body {
     padding-left: 160px;
     a {
         font-size: 15px;
-        color: silver;
+        color: $color-s;
         font-family: $font-header;
         text-shadow: black;
         &:hover {
@@ -147,7 +149,7 @@ body {
         text-align: center;
     }
     p {
-        color: silver;
+        color: $color-s;
         text-align: center;
     }
 }
@@ -210,13 +212,37 @@ body {
                     font-family: $font-header;
                 }
                 p{
-                    color: silver;
+                    color: $color-s;
                     text-align: center;
                     margin-top: 0;
                     font-family: $font-text;
                     font-style: italic;
                 }
             }
+        }
+    }
+}
+/*footer*/
+
+.socialmedia {
+    margin: 48px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+        margin: 0 10px;;
+        text-decoration: none;
+        font-size: 0;
+        text-align: center;
+        i {
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 30px; 
+            background: black;
+            border-radius: 50%;
+            color: white;
         }
     }
 }
