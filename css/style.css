@@ -22,7 +22,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: black;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .section-subtitle {
@@ -204,6 +204,8 @@ body {
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  margin-top: 60px;
+  padding-bottom: 96px;
 }
 
 .portfolio .row .col-4 {
@@ -245,6 +247,49 @@ body {
 }
 
 /*footer*/
+footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1 0 100%;
+      flex: 1 0 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .col-4 {
+  -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+  max-width: 33.3333333%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+footer .col-4 ul {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: #6c757d;
+}
+
+footer .col-4 ul li {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+footer .col-8 {
+  -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+footer .col-8 li {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 .socialmedia {
   margin: 48px 0;
   text-align: center;
@@ -254,20 +299,21 @@ body {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
+  padding-left: 0;
 }
 
 .socialmedia li {
-  margin: 0 10px;
+  margin: 0 5px;
   text-decoration: none;
   font-size: 0;
   text-align: center;
 }
 
 .socialmedia li i {
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
   background: black;
   border-radius: 50%;
   color: white;
