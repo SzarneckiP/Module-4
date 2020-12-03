@@ -47,7 +47,15 @@ body {
     font-size: 35px;
     font-family: $font-logo;
     color: $color-y;
-    padding-right: 160px;
+    /*padding-right: 160px;*/
+}
+
+.navigation .row {
+    align-items: center;
+    .col-lg-9 {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 .navigation {
@@ -107,7 +115,8 @@ body {
         margin: 30px 0;
         font-family: $font-header;
         font-weight: 400;
-        text-align: center;    
+        text-align: center;
+        text-shadow: 3px 3px black;    
         }
     }
 
@@ -206,6 +215,7 @@ body {
                 margin-top: 0;
                 font-family: $font-text;
                 font-style: italic;
+                padding-bottom: 15px;
             }
         }    
     }
@@ -228,7 +238,7 @@ footer {
             li{
                 display: inline-flex;
                 p {
-                    padding-top: 25px;
+                    padding-top: 0;
                 }
             }
         }
@@ -261,7 +271,7 @@ footer {
 
 /*media*/
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
     .services, .portfolio {
         flex-direction: column; 
         }
@@ -276,14 +286,18 @@ footer {
         font-size: 48px;
     }
 
-    .navigation ul li {
+    .navigation ul {
+        flex-flow: wrap;
+        justify-content: center;
+        li {
         margin: 0 5px;
+        }
     }
 
     .nav-right {
         padding-left: 0px;
         justify-content: right;
-        left: -45px;
+        /*left: -45px;*/
         position: relative;
         a {
             font-size: 14px;
@@ -293,8 +307,21 @@ footer {
 
  }
 
- @media (max-width: 767px) {
+ @media (max-width: 995px) {
+
+    .services, .portfolio {
+        flex-direction: column; 
+    }
+
      .page-title{
         padding-top: 20px;
+    }
+
+     .navigation ul li {
+        margin: 2px 5px;
+     }
+
+     .splash-inner h1 {
+         padding-top: 0;
      }
  }
